@@ -4,7 +4,6 @@ import SearchIcon from "@material-ui/icons/Search"
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined"
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined"
 import { Link } from "react-router-dom"
-import AmazonLogo from "../../utils/Amazon_Logo.png"
 
 const Header = () => {
   return (
