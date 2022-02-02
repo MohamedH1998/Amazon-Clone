@@ -6,6 +6,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  min-width: 100%;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -18,7 +20,7 @@
 
 .header-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .header-option {
@@ -28,7 +30,13 @@
   margin-right: 10px;
   color: #fff;
 }
-
+.location-container {
+  display: flex;
+}
+.location-icon {
+  margin-top: 6px;
+  color: white;
+}
 .header-link {
   color: white;
   text-decoration: none;
@@ -48,7 +56,8 @@
 
 .search {
   display: flex;
-  flex: 1;
+  width: 80%;
+  max-width: 500px;
   align-items: center;
   border-radius: 24px;
 }
@@ -56,9 +65,9 @@
 .search > select {
   height: 41px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 2px 0 0 2px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .searchIcon {
@@ -71,10 +80,10 @@
 }
 
 .searchInput {
-  height: 20px;
+  height: 19.5px;
   padding: 10px;
   border: none;
-  width: 80%;
+  width: 70%;
 }
 
 .searchInput :focus {

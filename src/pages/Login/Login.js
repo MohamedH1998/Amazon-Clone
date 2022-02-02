@@ -1,15 +1,30 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import AmazonLogo from "../../utils/Amazon_Logo.png"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux"
+import { loginInitiate } from "../../redux/actions"
 import "./Login.css"
-
 const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
+  const { user } = useSelector(state => state.data)
+
   const signIn = e => {
     e.preventDefault()
+    dispatch(loginInitiate(email, password))
+    setEmail("")
+    setPassword("")
   }
+
+  useEffect(() => {
+    if (user) {
+      navigate("/")
+    }
+  }, [user, navigate])
   return (
     <div className="login">
       <Link to="/">

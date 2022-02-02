@@ -5,11 +5,19 @@
   justify-content: flex-end;
   max-height: 400px;
   min-width: 100px;
+  max-width: 350px;
   margin: 10px;
   padding: 20px;
   width: 100%;
   background-color: white;
   z-index: 1;
+}
+
+.product-title {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .product > img {
@@ -38,13 +46,6 @@
 
 .rating {
   display: flex;
-}
-
-.title {
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 i {
