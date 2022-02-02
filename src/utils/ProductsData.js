@@ -12,12 +12,12 @@ const products = [
       "Double yoke for extra durability & stiffness; Patch pocket at chest",
       "Machine wash",
       "Made in India",
-      "Material: 100% Cotton",
+      "Material: 100% Cotton"
     ],
     detail:
       "Crafted in a pure cotton fabric, this long-sleeved, regular-fit modern shirt offers superb comfort and an impeccable finish. A reliable option for business wear, the shirt features a modern kent collar and double button mitered cuffs, a shirttail hem and a chest patch pocket. Team with tailored trousers and blazer for a pared-back professional look.",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/81qlnA0rJEL._UL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/81qlnA0rJEL._UL1500_.jpg"
   },
   {
     id: "2",
@@ -29,12 +29,12 @@ const products = [
       "Camera: 48 MP Quad Rear camera with 8MP Ultra-wide, 2MP Macro and Portrait lens| 13 MP Front camera",
       "Battery: 5000 mAh large battery with 33W fast charger in-box and Type-C connectivity",
       "Processor: Qualcomm Snapdragon 678 with Kryo 460 Octa-core; 11nm process; Up to 2.2GHz clock speed",
-      "Memory, Storage & SIM: 4GB RAM | 64GB UFS 2.2 storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)",
+      "Memory, Storage & SIM: 4GB RAM | 64GB UFS 2.2 storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)"
     ],
     detail:
       "‎Dual Stereo Speakers for immersive audio experience, The display is protected by Corning Gorilla Glass 3, 33W Fast Charger in box, 67% in 30 mins, 3.5mm Jack, IR Blaster, Dedicated Micro SD Slot, Z-Axis Linear Vibration Motor, 48 MP AI Quad Camera Setup 8MP Ultrawide-FOV 118 degrees 2 MP Macro Sensor 2 MP Depth Sensor Slow Motion Support - Up to 960 fps Portrait | Panaroma | Time Lapse | Pro Mode | Night Mode | Short Video Mode | Ultra wide-angle distortion correction | Custom Watermark | Document mode | HDR | AI scene detection | Video macro mode | Movie frame | Time burst | Google Lens| AI Watermark",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/71OGzLCrjZS._SL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71OGzLCrjZS._SL1500_.jpg"
   },
   {
     id: "3",
@@ -46,12 +46,12 @@ const products = [
       "25.65 cm (10.1 inch) HD Display",
       "8 MP Primary Camera | 5 MP Front",
       "Android 10 | Battery: 5000 mAh Lithium Polymer",
-      "Processor: MediaTek Helio P22T Octa Core Processor",
+      "Processor: MediaTek Helio P22T Octa Core Processor"
     ],
     detail:
       "The 10.1” HD IPS panel with 400 nits brightness, TUV certification and narrow bezels pack a pixel-perfect visual experience, that’s also portable. The sleek profile and all-metal finish add on to the beauty. Rely on MediaTek Helio P22T Octa Core processor to keep things running faster and smoother. On top of that, Android 10 brings in features like dark theme, smart reply and focus mode.",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/41jdvXSoeyS._SL1000_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/41jdvXSoeyS._SL1000_.jpg"
   },
   {
     id: "4",
@@ -65,12 +65,12 @@ const products = [
       "1TB 7200rpm hard drive + 256GB SSD",
       "16-inch screen, NVIDIA GeForce GTX 1650 4GB Graphics",
       "Windows 10 Home operating system",
-      "2.35kg laptop",
+      "2.35kg laptop"
     ],
     detail:
       "It’s not just another gaming laptop, it’s THE gaming laptop. Obviously, the OMEN 15 has a powerful Intel® processor and NVIDIA® graphics in a compact frame. Did we mention it has a fast display and long battery life? Yeah, it has everything and you can take it even further with OMEN Gaming Hub. So, just enjoy those envious looks while you play, it’s only natural with a beautiful machine. The OMEN 15 is a perfect example of how there can never be too much of a good thing. With a powerful Intel® processor and NVIDIA® graphics cooled by OMEN Tempest Cooling, it makes you think how it all fits into such a tiny little package.",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/71FHcGAPevL._SL1498_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71FHcGAPevL._SL1498_.jpg"
   },
   {
     id: "5",
@@ -84,12 +84,12 @@ const products = [
       "Closure Type: Slip On",
       "Toe Style: Round Toe",
       "Warranty Type: Manufacturer",
-      "Warranty Description: 90 days",
+      "Warranty Description: 90 days"
     ],
     detail:
       "The product will be an excellent pick for you. It ensures an easy maintenance.",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/712Brp0hwfL._UL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/712Brp0hwfL._UL1500_.jpg"
   },
   {
     id: "1234",
@@ -104,28 +104,25 @@ const products = [
       "Radeon Freesync - Gaming Features - DAS Mode and Black Stablizer",
       "Connectivity: HDMI x 2 , Display Port & Headphone out",
       "VESA Wall Mount 100 x 100",
-      "HDCP 2.2 for Displaying 4K Content from Streaming Service & Game Console",
+      "HDCP 2.2 for Displaying 4K Content from Streaming Service & Game Console"
     ],
     detail:
       "LG IPS display has extraordinary color accuracy, covering 98% of the sRGB color spectrum. It also has a wider viewing angle, so it's even easier to enjoy true color visuals. Radeon FreeSync reduces the tearing and stuttering that occur between a graphic card's frame rate and a monitor's refresh rate enabling smoother motion and less stuttering in demanding games.",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/61pI7loWpZS._SL1339_.jpg",
-  },
-];
+      "https://images-na.ssl-images-amazon.com/images/I/61pI7loWpZS._SL1339_.jpg"
+  }
+]
 
 const headerItems = [
   "All",
-  "BestSeller",
-  "Mobiles",
-  "Prime",
-  "Electronic",
-  "Fashion",
-  "New Releases",
+  "Best Seller",
   "Customer Service",
-  "Amazon Pay",
-  "Computers",
-  "Home & Kitchen",
+  "Gift Ideas",
+  "New Releases",
   "Today's Deals",
-];
+  "Music",
+  "Vouchers",
+  "PC & Video Games"
+]
 
-export { products, headerItems };
+export { products, headerItems }

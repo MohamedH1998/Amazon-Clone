@@ -16,12 +16,19 @@ const Home = () => {
     <div>
       <div className="item-container">
         {headerItems && headerItems.map((item, i) => <p>{item}</p>)}
+        <div className="deals">
+          <img
+            className="deals-img"
+            src="https://images-eu.ssl-images-amazon.com/images/G/02/Gateway/NPA/Deals_SWM._CB485930216_.png"
+            alt="todays-details"
+          />
+        </div>
       </div>
       <div className="home">
         <div className="home-container">
           <Slider images={bannerImages} />
           <div className="home-row">
-            {products.slice(0, 2).map(item => (
+            {products.slice(0, 3).map(item => (
               <Product
                 key={item.id}
                 id={item.id}
@@ -35,21 +42,7 @@ const Home = () => {
             ))}
           </div>
           <div className="home-row">
-            {products.slice(2, 5).map(item => (
-              <Product
-                key={item.id}
-                id={item.id}
-                title={item.title}
-                price={item.price}
-                rating={item.rating}
-                image={item.image}
-                specification={item.specification}
-                detail={item.detail}
-              />
-            ))}
-          </div>
-          <div className="home-row">
-            {products.slice(5, 6).map(item => (
+            {products.slice(3, 6).map(item => (
               <Product
                 key={item.id}
                 id={item.id}

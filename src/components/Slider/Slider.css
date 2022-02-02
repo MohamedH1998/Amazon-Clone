@@ -1,6 +1,6 @@
 .section {
   width: 80vw;
-  margin: 5rem auto;
+  margin: 0 auto;
   max-width: 1000px;
 }
 
@@ -15,6 +15,10 @@
   text-align: center;
   display: flex;
 }
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 article {
   position: absolute;
@@ -26,15 +30,13 @@ article {
   transition: all 0.3s linear;
 }
 
-article.activeSlide {
-  opacity: 1;
-  transform: translateX(0);
-}
 article.lastSlide {
   transform: translateX(-100%);
+  opacity: 0;
 }
 article.nextSlide {
   transform: translateX(100%);
+  opacity: 0;
 }
 
 .banner-img {
@@ -64,6 +66,10 @@ article.nextSlide {
 }
 .next {
   right: 0;
+}
+
+.arrow {
+  font-size: 00px;
 }
 @media (min-width: 800px) {
   .text {

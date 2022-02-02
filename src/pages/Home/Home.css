@@ -9,9 +9,19 @@
 .item-container {
   display: flex;
   color: white;
-  background-color: #2b2727;
+  padding: 0px 50px;
+  background-color: #232f3e;
+  font-weight: 500;
+  align-items: flex-start;
 }
 
+.deals {
+  align-self: flex-end;
+  max-width: 300px;
+}
+.deals-img {
+  max-width: 380px;
+}
 .item-container p {
   margin: 10px;
   font-size: 14px;

@@ -4,8 +4,17 @@ import SearchIcon from "@material-ui/icons/Search"
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined"
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined"
 import { Link } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux"
+import { logoutInitiate } from "../../redux/actions"
 
 const Header = () => {
+  const { user, basket } = useSelector(state => state.data)
+
+  let dispatch = useDispatch()
+
+  const handleAuth = () => {
+    user && dispatch(logoutInitiate())
+  }
   return (
     <nav className="header">
       <Link to="/">
@@ -15,25 +24,31 @@ const Header = () => {
           className="header-logo"
         />
       </Link>
-      <div className="heaader-option" style={{ marginRight: "-10px" }}>
-        <LocationOnOutlinedIcon />
-      </div>
-      <div className="header-option">
-        <span className="header-option1">Hello</span>
-        <span className="header-option2">Select Your Address</span>
+      <div className="location-container">
+        <i className="location-icon">
+          <LocationOnOutlinedIcon />
+        </i>
+        <div className="header-option">
+          <span className="header-option1">Hello</span>
+          <span className="header-option2">Select your address</span>
+        </div>
       </div>
       <div className="search">
         <select>
-          <option>All</option>
+          <option>All Departments</option>
         </select>
         <input type="text" className="searchInput" />
         <SearchIcon className="searchIcon" />
       </div>
       <div className="header-nav">
-        <Link to="/login" className="header-link">
-          <div className="header-option">
-            <span className="header-option1">Hello Guest</span>
-            <span className="header-option2">Sign In</span>
+        <Link to={user ? "/" : "/login"} className="header-link">
+          <div onClick={handleAuth} className="header-option">
+            <span className="header-option1">
+              Hello, {user ? user.email : "Guest"}
+            </span>
+            <span className="header-option2">
+              {user ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
         <Link to="/orders" className="header-link">
@@ -45,7 +60,9 @@ const Header = () => {
         <Link to="/checkout" className="header-link">
           <div className="header-basket">
             <ShoppingCartOutlinedIcon />
-            <span className="heaeder-option2 basket-count">0</span>
+            <span className="heaeder-option2 basket-count">
+              {basket && basket.length}
+            </span>
           </div>
         </Link>
       </div>

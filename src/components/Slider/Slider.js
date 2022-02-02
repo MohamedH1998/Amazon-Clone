@@ -45,10 +45,10 @@ const Slider = ({ images }) => {
           )
         })}
         <p className="prev" onClick={() => setIndex(index - 1)}>
-          <ArrowBackIosIcon />
+          <ArrowBackIosIcon fontSize="large" />
         </p>
         <p className="next" onClick={() => setIndex(index + 1)}>
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="large" />
         </p>
       </div>
     </div>
