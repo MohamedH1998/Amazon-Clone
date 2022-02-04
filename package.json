@@ -22,7 +22,12 @@
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "babel-eslint": "^10.1.0",
+    "cors": "^2.8.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "firebase-admin": "^9.8.0",
+    "stripe": "^8.201.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,6 +54,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.16.5"
+    "@babel/eslint-parser": "^7.16.5",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "firebase-functions-test": "^0.2.0"
   }
 }
