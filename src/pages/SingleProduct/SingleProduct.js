@@ -10,7 +10,6 @@ const SingleProduct = () => {
   let { id } = useParams()
   let dispatch = useDispatch()
   let singleProduct = products.find(item => item.id === id)
-  console.log(singleProduct)
 
   const addItemToBasket = () => {
     const item = {

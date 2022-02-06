@@ -17,7 +17,6 @@ const basketReducer = (state = initialState, action) => {
     case types.REMOVE_FROM_BASKET:
       let updatedBasket = [...state.basket]
       const index = state.basket.findIndex(item => item.id === action.payload)
-      console.log(index)
       if (index >= 0) {
         updatedBasket.splice(index, 1)
       }
